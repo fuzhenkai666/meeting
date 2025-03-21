@@ -5,7 +5,7 @@ export async function POST(request: NextRequest) {
     // 从请求体中获取 challenge 值
     const body = await request.json();
     const challenge = body.challenge;
-
+    console.log('收到的challenge值:', challenge);
     // 检查 challenge 是否存在
     if (challenge) {
       // 返回 challenge 值
